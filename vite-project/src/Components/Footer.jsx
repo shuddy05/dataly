@@ -25,7 +25,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between w-full lg:w-1/2 gap-5 text-sm ">
+        <div className="flex justify-between w-full lg:w-1/2 gap-2 text-sm ">
           <div className="flex flex-col gap-2 ">
             <p className="text-gray-500 font-bold text-lg  ">Solutions</p>
 
