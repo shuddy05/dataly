@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "./Button";
 export const Notifyme = () => {
   return (
@@ -24,10 +23,11 @@ export const Notifyme = () => {
               <Button
                 content={"Notify Me"}
                 className={"bg-green-400 text-black"}
+                type={"submit"}
               />
             </form>
             <p className="mt-4">
-              We care bout the protection of your data. Read our 
+              We care bout the protection of your data. Read our
               <span className="text-green-500"> Privacy Policy.</span>
             </p>
           </div>
