@@ -1,5 +1,21 @@
 import Button from "./Button";
+import { useState } from "react";
 export const Notifyme = () => {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // hadnle input
+    if (!email) {
+      setError("Please enter a valid email");
+      return;
+    }
+
+    setEmail("");
+    setError("");
+  };
+
   return (
     <section className="bg-black text-white ">
       <div className="layout ">
@@ -14,12 +30,21 @@ export const Notifyme = () => {
             </p>
           </div>
           <div>
-            <form action="">
-              <input
-                type="email"
-                placeholder="Enter Email"
-                className="bg-white rounded-md w-[200px] p-3 mb-3 mr-3 text-black"
-              />
+            <form
+              onSubmit={handleSubmit}
+              className=" flex flex-col md:flex-row items-start gap-3"
+            >
+              <div>
+                <input
+                  type="email"
+                  placeholder="Enter Email"
+                  className="bg-white rounded-md w-[200px] p-3 mb-3  text-black"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <p className="text-sm text-red-600 ">{error}</p>
+              </div>
+
               <Button
                 content={"Notify Me"}
                 className={"bg-green-400 text-black"}

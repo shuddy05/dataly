@@ -6,7 +6,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaDribbbleSquare } from "react-icons/fa";
 export const Footer = () => {
   return (
-    <footer className="bg-black  py-16 px-2 text-white ">
+    <footer className="bg-black   text-white h-[60vh] flex justify-center items-center ">
       <div className="layout flex flex-col lg:flex-row justify-between gap-10  ">
         <div className="w-full lg:w-1/2">
           <div className="">
@@ -25,7 +25,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between w-full lg:w-1/2 gap-2 text-sm ">
+        <div className="flex justify-between  lg:w-1/2 gap-5 text-sm ">
           <div className="flex flex-col gap-2 ">
             <p className="text-gray-500 font-bold text-lg  ">Solutions</p>
 
