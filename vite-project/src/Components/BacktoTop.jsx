@@ -28,6 +28,8 @@ const BacktoTop = () => {
         <button className=" hidden  h-15 w-15 bg-green-900 md:flex justify-center items-center rounded-md  fixed bottom-8 right-6">
           <BsArrowUp size={26} className="text-white" />
         </button>
+      </a>
+      <a href="toTop">
         <button className=" h-10 md:15 w-10 md:15 bg-green-900 flex justify-center items-center rounded-md  fixed bottom-8 right-6 md:hidden">
           <BsArrowUp size={15} className="text-white" />
         </button>

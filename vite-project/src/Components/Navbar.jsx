@@ -11,11 +11,8 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="text-white bg-black">
-      <nav
-        id="toTop"
-        className=" layout flex justify-between items-center h-24 p-4"
-      >
+    <header id="toTop" className="text-white bg-black">
+      <nav className=" layout flex justify-between items-center h-24 p-4">
         <h1 className="text-3xl font-bold text-green-400 italic">DATALY.</h1>
         <div className="hidden md:flex gap-8 items-center">
           <a href="#">Home</a>
