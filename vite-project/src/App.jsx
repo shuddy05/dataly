@@ -8,7 +8,7 @@ import Testimonial from "./Components/Testimonial";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Notifyme from "./Components/Notifyme";
-
+import BacktoTop from "./Components/BacktoTop";
 function App() {
   return (
     <div>
@@ -19,6 +19,7 @@ function App() {
       <Products />
       <Testimonial />
       <Footer />
+      <BacktoTop />
     </div>
   );
 }
