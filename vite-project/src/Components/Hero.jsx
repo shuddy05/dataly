@@ -1,4 +1,6 @@
 import React from "react";
+import { ReactTyped } from "react-typed";
+
 import Button from "./Button";
 export const Hero = () => {
   return (
@@ -12,7 +14,17 @@ export const Hero = () => {
         </h1>
         <h1 className=" text-xl md:text-4xl font-bold ">
           Fast, Flexible Financing for{" "}
-          <span className="text-gray-600">BTC|</span>
+          <span className="text-gray-600">
+            <ReactTyped
+              strings={["BTB|", "BTC", "SASS"]}
+              typeSpeed={40}
+              backSpeed={50}
+              attr="placeholder"
+              loop
+            >
+              <input type="text" />
+            </ReactTyped>
+          </span>
         </h1>
         <h1 className="text-gray-600 font-bold text-md md:text-2xl my-5 ">
           Monitor your data analytics to increase revenue for BTB, BTC & SASS
